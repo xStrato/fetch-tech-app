@@ -4,13 +4,13 @@ import '../../Styles/App.css'
 
 export default class Section
 {
-  static Card(props?: any): JSX.Element
+  static Card({id, name, price, description, pictures}: ICard): JSX.Element
   {
-    const {id, name, price, description, pictures}: ICard = props.card
-
     return (
       <>
-      Cardddd
+      Section party
+      {price}
+      {name}
       </>
     )
   }
