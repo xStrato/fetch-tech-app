@@ -1,33 +1,41 @@
 import React from 'react';
 import '../Styles/App.css'
 import { ICard, IProps } from '../Interfaces'
-import { inspect } from 'util';
-
-// const [ativo, setAtivo] = React.useState(0)
+import Header from './Header/Header';
 
 export default class App
 {
+  static data: any
+  static SetData: any
   //Responsible only for rendering the children
-  static Container(props?: any): JSX.Element
+  static Container(): JSX.Element
   {
+    [App.data, App.SetData] = React.useState({})
+    console.log(App.data);
     return (
       <div className="app-container">
+
+        <App.Header title ={"tech-fetch-versus"} />
+        <App.Section />
+        <App.Footer />
+
       </div>
     )
   }
 
-  static Header(props?: any): JSX.Element
+  static Header({title}:{title: string}): JSX.Element
   {
     return (
       <div className="app-header">
-        <h1>Tech Fetch Versus</h1>
+
+        {title}
+        <Header.Navbar />
+
       </div>
     )
   }
 
-  static Section({children: {type: Card}}: IProps<JSX.Element>): JSX.Element {
-
-    const [data, setData] = React.useState(0)
+  static Section(props?: any): JSX.Element {
 
     const cardProps: ICard = {
       id: "200000",
@@ -39,14 +47,14 @@ export default class App
 
     return (
       <div className="app-section">
-        <Card card={cardProps} />
       </div>
     )
   }
 
-  static Footer(props: any): JSX.Element {
+  static Footer(props?: any): JSX.Element {
     return (
-      <div>Tsste</div>
+      <div>
+      </div>
     )
   }
 }

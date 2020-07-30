@@ -9,20 +9,8 @@ import Section from './Components/Section/Section'
 ReactDOM.render(
   <React.StrictMode>
 
-    <App.Container
-
-    header={<App.Header/>}
-    section={<App.Section />}
-    footer={<App.Footer />}
+    <App.Container />
     
-    />
-
-    <App.Header navbar={<Header.Navbar />}/>
-        
-
-      <App.Section>
-        <Section.Card />
-      </App.Section>
   </React.StrictMode>,
   document.getElementById('root')
 );

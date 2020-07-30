@@ -1,12 +1,11 @@
 import React from 'react'
 
-export default class HeaderController {
-
+export default class AppController {
   static onClick(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
     try 
     {
       const element: HTMLBaseElement = event.nativeEvent.target as HTMLBaseElement;
-      HeaderController.apiFetch(`https://ranekapi.origamid.dev/json/api/produto/${element.textContent?.slice(0, -1)}`)
+      AppController.apiFetch(`https://ranekapi.origamid.dev/json/api/produto/${element.textContent?.slice(0, -1)}`)
 
     } catch (error)
     {
@@ -17,10 +16,11 @@ export default class HeaderController {
   static async apiFetch(url: string): Promise<void> {
     try
     {
-      const responde = await fetch(url)
-      const data = await responde.json()
+      const [data, setData] = React.useState(null)
 
-      console.log(data);
+      const responde = await fetch(url)
+      const json = await responde.json()
+
     } catch (error)
     {
       throw new Error(error.message)

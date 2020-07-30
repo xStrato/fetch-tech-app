@@ -1,18 +1,18 @@
 import React from 'react'
-import HeaderController from './HeaderController'
+import AppController from './AppController'
 import { IProps, IHeaderButton } from '../../Interfaces'
 
 import '../../Styles/App.css'
 
 export default class Header 
 {
-  static Navbar(props?: IProps<any>): JSX.Element
+  static Navbar(props: IProps<any>): JSX.Element
   {
     return (
       <div className="header-navbar">
-        <Header.Button event={HeaderController.onClick} label="Smartphones" />
-        <Header.Button event={HeaderController.onClick} label="Notebooks" />
-        <Header.Button event={HeaderController.onClick} label="Tablets" />
+        <Header.Button event={AppController.onClick} label="Smartphones" />
+        <Header.Button event={AppController.onClick} label="Notebooks" />
+        <Header.Button event={AppController.onClick} label="Tablets" />
       </div>
     )
   }
