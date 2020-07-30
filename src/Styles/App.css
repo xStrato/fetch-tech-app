@@ -1,4 +1,12 @@
-.header-main-div
+.app-container
+{
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid blue;
+}
+
+.app-header
 {
   display: block;
   padding: 1rem;
@@ -7,7 +15,7 @@
   margin: 10px;
 }
 
-.navbar
+.header-navbar
 {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +24,7 @@
   border: 1px solid green;
 }
 
-.navbar-button
+.header-navbar-button
 {
   font-size: 1rem;
   font-weight: bold;
@@ -28,4 +36,8 @@
   width: 200px;
   border-radius: 10px;
   outline: none;
+}
+.app-section
+{
+  border: 1px solid black;
 }
