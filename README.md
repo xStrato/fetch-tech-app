@@ -1,5 +1,5 @@
 ## Fetch-Tech-App
-**An experimental React App using Typescript**
+**An experimental and functional React App using Typescript**
 
 ![Image of ReactApp](https://github.com/xStrato/fetch-tech-app/blob/master/public/fetch_tech_app_demo.png)
 ## 
