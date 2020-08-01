@@ -1,11 +1,11 @@
 import React from 'react';
 import "./App.css"
-import Produt from './Produto';
+import Model from './Model';
 import ReactLogo from './logo192.png'
 
 export default class App
 {
-  static Main()
+  static Container(): JSX.Element
   {
     const [data, setData] = React.useState(null);
     const [loading, setLoading] = React.useState(false);
@@ -30,7 +30,7 @@ export default class App
           <button className="header-navbar-button" onClick={handleClick}>Tablet</button>
         </div>
         {loading && <p className="loading">Loading...</p>}
-        {!loading && data && <Produt dados={data} />}
+        {!loading && data && <Model.Product dados={data} />}
       </div>
     );
   }
