@@ -1,0 +1,124 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app-container
+{
+  background-color: #7C79A2;
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+
+.app-header
+{
+  font-family: 'Rowdies', cursive;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  background-image: linear-gradient(to top right, #7C79A2, #F57D7C);
+}
+
+#react-logo-header
+{
+  position: absolute;
+  width: 40px;
+}
+
+.app-header h1
+{
+  font-size: 3rem;
+  background-image: linear-gradient(to top right, #7C79A2,#F57D7C);
+  letter-spacing: 10px;
+  background-color: #6CC2BD;
+  color: aliceblue;
+}
+
+.header-navbar
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+
+.header-navbar-button
+{
+  font-weight: bold;
+  color: aliceblue;
+  border: none;
+  background-image: linear-gradient(to top right, #7C79A2,#F57D7C);
+  padding: .75rem;
+  margin: .25rem 1.5rem;
+  width: 200px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+  border-top: 2px solid #7C79A2;
+  border-left: 2px solid #7C79A2;
+  border-bottom: 2px solid #F57D7C;
+  border-right: 2px solid #F57D7C;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.app-section
+{
+  text-align: center;
+  background-color: #7C79A2;
+  color: #5A809E;
+  margin-top: 20px;
+}
+
+.app-section
+{
+  text-align: center;
+  color: black;
+}
+
+.app-section h1, .app-section p
+{
+  margin: 10px 0px;
+  padding: 2px 0px;
+  background-image: linear-gradient(to top right, #7C79A2,#fff);
+}
+
+.app-section-img-wrapper
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.app-section-img-wrapper img
+{
+  width: 400px;
+  margin: 10px;
+  border: 10px #F57D7C double;
+}
+
+.loading
+{
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Rowdies', cursive;
+}
