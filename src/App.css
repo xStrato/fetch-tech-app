@@ -1,28 +1,14 @@
 *
 {
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .app-container
 {
   background-color: #7C79A2;
   height: 100vh;
   max-width: 1200px;
   margin: auto;
-  /* border: 1px solid blue; */
 }
 
 .app-header
@@ -96,7 +82,7 @@ code {
 {
   margin: 10px 0px;
   padding: 2px 0px;
-  background-image: linear-gradient(to top right, #7C79A2,#fff);
+  background: linear-gradient(to left, #7C79A2, #fff, #fff, #7C79A2);
 }
 
 .app-section-img-wrapper
