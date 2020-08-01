@@ -1,6 +1,7 @@
 ## Fetch-Tech-App
-**An exprimerimental React App build in Typescript**
-![Image of ReactApp](https://github.com/xStrato/fetch-tech-app/blob/master/src/fetch_tech_app_demo.png)
+**An exprimerimental React App build with Typescript**
+
+![Image of ReactApp](https://github.com/xStrato/fetch-tech-app/blob/master/public/fetch_tech_app_demo.png)
 ## 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
